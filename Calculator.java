@@ -6,17 +6,15 @@
  * @version (a version number or a date)
  */
 public class Calculator{
-    float op1 = 0;
-    float op2 = 0;
-    public float hasil;
+    String name;
     
-    void tambah(){
-        hasil = op1 + op2;
-    }
-    void perkalian(){
-        hasil = op1 * op2;
-    }
+    int a = 4;
+    int b = 5;
     
+    int penjumlahan = a + b;
+    int perkalian = a * b;
+    int pengurangan = a - b;
+    int pembagian = a / b;
     /**
      * An example of a method - replace this comment with your own
      *

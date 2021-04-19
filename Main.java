@@ -11,18 +11,16 @@ public class Main{
         // menciptakan objek baru dari class Calculator
         Calculator kalkul = new Calculator();
         
-        // memasukkan bilangan pada operator 1 & 2
-        kalkul.op1 = 5;
-        kalkul.op2 = 4;
-        
-        //memanggil method operator
-        kalkul.tambah();
-        kalkul.perkalian();
-        
+        kalkul.name = "Operator ";
+
+        //inputan oprator yg dijalankan
+        System.out.println("nilai 1 = "+ kalkul.a);
+        System.out.println("nilai 1 = "+ kalkul.b);
         //memanggil atribut hasil
-        System.out.println("perjumlahan dari 5 + 4 = "+ kalkul.tambah());
-        System.out.println("perjumlahan dari 5 * 4 = "+ kalkul.perkalian());    
-        
+        System.out.println(kalkul.name + "penjumlahan 4 + 5 = "+ kalkul.penjumlahan);
+        System.out.println(kalkul.name + "pengurangan 4 - 5 = "+ kalkul.pengurangan);
+        System.out.println(kalkul.name + "perkalian 4 * 5 = "+ kalkul.perkalian);
+        System.out.println(kalkul.name + "pembagian 4 / 5 = "+ kalkul.pembagian);        
     }
 
 }
