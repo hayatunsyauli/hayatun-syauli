@@ -2,7 +2,7 @@
 /**
  * Write a description of class Calculator here.
  *
- * @author (your name)
+ * @author (Hayatun syauli)
  * @version (a version number or a date)
  */
 public class Calculator{
@@ -15,6 +15,8 @@ public class Calculator{
     int perkalian = a * b;
     int pengurangan = a - b;
     int pembagian = a / b;
+    
+    
     /**
      * An example of a method - replace this comment with your own
      *

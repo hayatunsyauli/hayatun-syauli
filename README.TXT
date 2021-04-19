@@ -7,6 +7,7 @@ all he/she needs to know. The comments should usually include at least:
 PROJECT TITLE: kalkulator
 PURPOSE OF PROJECT:
 VERSION or DATE: 1
-HOW TO START THIS PROJECT: ongoing
+HOW TO START THIS PROJECT: Done 
 AUTHORS: Hayatun syauli
+NIM : 2020302007
 USER INSTRUCTIONS:

@@ -13,6 +13,8 @@ public class Main{
         
         kalkul.name = "Operator ";
 
+        //author
+        System.out.println("--- OPERATOR DASAR PADA JAVA ---");
         //inputan oprator yg dijalankan
         System.out.println("nilai 1 = "+ kalkul.a);
         System.out.println("nilai 1 = "+ kalkul.b);
