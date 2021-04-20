@@ -17,7 +17,7 @@ public class Main{
         System.out.println("--- OPERATOR DASAR PADA JAVA ---");
         //inputan oprator yg dijalankan
         System.out.println("nilai 1 = "+ kalkul.a);
-        System.out.println("nilai 1 = "+ kalkul.b);
+        System.out.println("nilai 2 = "+ kalkul.b);
         //memanggil atribut hasil
         System.out.println(kalkul.name + "penjumlahan 4 + 5 = "+ kalkul.penjumlahan);
         System.out.println(kalkul.name + "pengurangan 4 - 5 = "+ kalkul.pengurangan);
