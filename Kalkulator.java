@@ -8,7 +8,7 @@ public class Kalkulator{
     // op1
     public double op1=0;
     public double op2=0;
-    public static final String info = "Kalkulatorku";
+    public static final String info = "Kalkulatorku Mantappu Djiwa";
     public static int jumlahobject = 0;
 
     /**
@@ -143,6 +143,31 @@ public class Kalkulator{
         this.op1 = op1;
         this.op2 = op2;
         return kali();
+    }
+    
+    /**
+     * bagi tanpa parameter
+     *
+     * @param  
+     * @return  double hasil Pembagian op1 / op2
+     */
+    public double bagi() 
+    {
+        return this.op1 / this.op2;
+    }
+    
+     /**
+     * bagi dengan parameter
+     *
+     * @param  double op1
+     *         double op2
+     * @return double hasil Pembagian op1 * op2
+     */
+    public double bagi(double op1, double op2) 
+    {
+        this.op1 = op1;
+        this.op2 = op2;
+        return bagi();
     }
     
     
