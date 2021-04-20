@@ -1,28 +1,59 @@
 
 /**
- * Write a description of class Main here.
+ * class Main 
  *
- * @author (Hayatun syauli )
- * @version (a version number or a date)
+ * @author dientaufan
+ * @version 0.1
  */
-public class Main{
+public class Main
+{
+    public static void main(String args[])
+    {
+       System.out.println(Kalkulator.info);
+       
+       Kalkulator calculator1 = new Kalkulator();
+       Kalkulator calculator2 = new Kalkulator(3,5);
+       Kalkulator calculator3 = new Kalkulator(3);
+       Kalkulator calculator4 = new Kalkulator();
     
-    public static void main(String args[]){
-        // menciptakan objek baru dari class Calculator
-        Calculator kalkul = new Calculator();
-        
-        kalkul.name = "Operator ";
+       System.out.println("");
+       System.out.println("");
+       System.out.println("Nilai setelah op1 dan op2 diganti");
+       
+       calculator1.setOp1(40);
+       calculator2.setOp1(50);
+       calculator3.setOp1(60);
+       System.out.println("Nilai op1 Constructor tanpa parameter: "+calculator1.getOp1());
+       System.out.println("Nilai op1 Constructor dengan 2 parameter: "+calculator2.getOp1());
+       System.out.println("Nilai op1 Constructor dengan 3 parameter: "+calculator3.getOp1());
+       
+       System.out.println("");
+       calculator1.op2 = 20;
+       calculator2.op2 = 20;
+       calculator3.op2 = 30;
+       System.out.println("Nilai op2 Constructor tanpa parameter: "+calculator1.op2);
+       System.out.println("Nilai op2 Constructor dengan 2 parameter: "+calculator2.op2);
+       System.out.println("Nilai op2 Constructor dengan 3 parameter: "+calculator3.op2);
 
-        //author
-        System.out.println("--- OPERATOR DASAR PADA JAVA ---");
-        //inputan oprator yg dijalankan
-        System.out.println("nilai 1 = "+ kalkul.a);
-        System.out.println("nilai 2 = "+ kalkul.b);
-        //memanggil atribut hasil
-        System.out.println(kalkul.name + "penjumlahan 4 + 5 = "+ kalkul.penjumlahan);
-        System.out.println(kalkul.name + "pengurangan 4 - 5 = "+ kalkul.pengurangan);
-        System.out.println(kalkul.name + "perkalian 4 * 5 = "+ kalkul.perkalian);
-        System.out.println(kalkul.name + "pembagian 4 / 5 = "+ kalkul.pembagian);        
-    }
+       System.out.println("");
+       System.out.println(Kalkulator.jumlahobject);
+       
+       System.out.println("");
+       double hasil1 = calculator1.jumlah();
+       double hasil2 = calculator1.jumlah(3.4, 5.4);
+       System.out.println("Hasil penjumlahan method jumlah tanpa parameter: "+ hasil1);
+       System.out.println("Hasil penjumlahan method jumlah dengan parameter: "+ hasil2);
 
+       System.out.println("");
+       double hasil3 = calculator1.kurang();
+       double hasil4 = calculator1.kurang(3.4, 5.4);
+       System.out.println("Hasil perkurangan method kurang tanpa parameter: "+ hasil3);
+       System.out.println("Hasil perkurangan method kurang dengan parameter: "+ hasil4);
+    
+       System.out.println("");
+       double hasil5 = calculator1.kali();
+       double hasil6 = calculator1.kali(3.4, 5.4);
+       System.out.println("Hasil perkalian method kali tanpa parameter: "+ hasil5);
+       System.out.println("Hasil perkalian method kali dengan parameter: "+ hasil6);}
+    
 }
