@@ -1,8 +1,8 @@
 /**
  * class Kalkulator
  *
- * @author dientaufan
- * @version 0.1
+ * @author Hayatun syauli
+ * @version 0.2
  */
 public class Kalkulator{
     // op1
