@@ -8,8 +8,9 @@ public class Kalkulator{
     // op1
     public double op1=0;
     public double op2=0;
+    
     public static final String info = "Kalkulatorku Mantappu Djiwa";
-    public static int jumlahobject = 0;
+    //public static int jumlahobject = 0;
 
     /**
      * Constructor for objects of class Kalkulator
@@ -17,7 +18,7 @@ public class Kalkulator{
     public Kalkulator()
     {
         // initialise instance variables
-        this.jumlahobject += 1;
+        //this.jumlahobject += 1;
     }
     
     /**
@@ -29,7 +30,7 @@ public class Kalkulator{
     {
         this.op1 = op1;
         this.op2 = op2;
-        this.jumlahobject += 1;
+       // this.jumlahobject += 1;
     
     }
     
@@ -41,7 +42,7 @@ public class Kalkulator{
     public Kalkulator(double op2)
     {
         this.op2 = op2;
-        this.jumlahobject += 1;
+      //  this.jumlahobject += 1;
     
     }
     
@@ -76,8 +77,7 @@ public class Kalkulator{
      * @param  
      * @return  double hasil penjumlahan op1 + op2
      */
-    public double jumlah() 
-    {
+    public double jumlah(){
         return this.op1 + this.op2;
     }
     
@@ -88,8 +88,7 @@ public class Kalkulator{
      *         double op2
      * @return double hasil penjumlahan op1 + op2
      */
-    public double jumlah(double op1, double op2) 
-    {
+    public double jumlah(double op1, double op2){
         this.op1 = op1;
         this.op2 = op2;
         return jumlah();
@@ -100,7 +99,7 @@ public class Kalkulator{
      *
      * @param  
      * @return  double hasil perkurangan op1 + op2
-     */
+     *
     public double kurang() 
     {
         return this.op1 - this.op2;
@@ -112,7 +111,7 @@ public class Kalkulator{
      * @param  double op1
      *         double op2
      * @return double hasil perkurangan op1 - op2
-     */
+     *
     public double kurang(double op1, double op2) 
     {
         this.op1 = op1;
@@ -125,7 +124,7 @@ public class Kalkulator{
      *
      * @param  
      * @return  double hasil Perkalian op1 * op2
-     */
+     *
     public double kali() 
     {
         return this.op1 * this.op2;
@@ -137,7 +136,7 @@ public class Kalkulator{
      * @param  double op1
      *         double op2
      * @return double hasil Perkalian op1 * op2
-     */
+     *
     public double kali(double op1, double op2) 
     {
         this.op1 = op1;
@@ -150,7 +149,7 @@ public class Kalkulator{
      *
      * @param  
      * @return  double hasil Pembagian op1 / op2
-     */
+     *
     public double bagi() 
     {
         return this.op1 / this.op2;
@@ -162,14 +161,14 @@ public class Kalkulator{
      * @param  double op1
      *         double op2
      * @return double hasil Pembagian op1 * op2
-     */
+     *
     public double bagi(double op1, double op2) 
     {
         this.op1 = op1;
         this.op2 = op2;
         return bagi();
     }
-    
+    */
     
     
 }
