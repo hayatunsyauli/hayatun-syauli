@@ -10,6 +10,8 @@ public class Kalkulator{
     public double op2=0;
     
     public static final String info = "Kalkulatorku Mantappu Djiwa";
+    public static int jumlahobject = 0;
+    private SimpanOperasiCalculator soc;
     //public static int jumlahobject = 0;
 
     /**
@@ -20,6 +22,16 @@ public class Kalkulator{
         // initialise instance variables
         //this.jumlahobject += 1;
     }
+    
+    /**
+     * Constructor for objects of class Calculator
+     */
+    public Kalkulator(SimpanOperasiCalculator soc)
+    {
+        // initialise instance variables
+        this.soc = soc;
+    }
+    
     
     /**
      * Constructor for objects of class Kalkulator
@@ -61,6 +73,17 @@ public class Kalkulator{
     }
     
     /**
+     * set soc
+     *
+     * @param  SimpanOperasiCalculator   
+     * @return  void
+     */
+    public void setSimpanOperasi(SimpanOperasiCalculator soc)
+    {
+        this.soc = soc;
+    }
+    
+    /**
      * get op1
      *
      * @param  double op1  
@@ -78,6 +101,7 @@ public class Kalkulator{
      * @return  double hasil penjumlahan op1 + op2
      */
     public double jumlah(){
+         simpanOperasi(String.valueOf(this.op1) +" + "+ String.valueOf(this.op2));
         return this.op1 + this.op2;
     }
     
@@ -169,6 +193,31 @@ public class Kalkulator{
         return bagi();
     }
     */
+    /**
+     * simpanOperasi
+     *
+     * @param  String data
+     *      
+     * @return void
+     */
+    public void simpanOperasi(String data) 
+    {
+        //simpan operasi
+        this.soc.simpanOperasi(data);
+    }
+    
+    /**
+     * bacaOperasi
+     *
+     * @param  void
+     *      
+     * @return String
+     */
+    public String bacaOperasi() 
+    {
+        //baca operasi
+        return this.soc.bacaOperasi();
+    }
     
     
 }

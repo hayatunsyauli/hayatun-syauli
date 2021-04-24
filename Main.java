@@ -1,4 +1,4 @@
-
+import java.lang.Math;
 /**
  * class Main 
  *
@@ -64,7 +64,8 @@ public class Main
        CalculatorProgrammer clp = new CalculatorProgrammer();
        System.out.println(clp.jumlah(4,5));
        System.out.println(clp.konversiBilangantoHex(4));
-    */
+    
+   
       
        CalculatorScientific cs = new CalculatorScientific();
        System.out.println("Penjumlahan dari 4 + 5 = "+ cs.jumlah(4,5));
@@ -82,6 +83,77 @@ public class Main
        CalculatorProgrammer cp = new CalculatorProgrammer();
        System.out.println("\n Kalkulator Programmer");
        System.out.println("Konversi 7070 ke Hexadesimal adalah = "+ cp.konversiBilanganDesimaltoHex(7070));
-       System.out.println("Konversi 7070 ke Binner adalah = "+ cp.konversiBilanganDesimaltoBinner(7070));       
+       System.out.println("Konversi 7070 ke Binner adalah = "+ cp.konversiBilanganDesimaltoBinner(7070));  
+       
+      
+       CalculatorTrigonometri clr = new CalculatorTriRadian();
+       CalculatorTrigonometri cld = new CalculatorTriDegree();
+       
+
+       clr.op1 = 3;
+       clr.op2 = 80;
+       System.out.println(clr.jumlah());
+       
+       cld.op1 = 3;
+       cld.op2 = 5;
+       System.out.println(cld.jumlah());
+       
+       double sudutindegree = 30;
+       double sudutinrad = Math.PI / 6;
+       cld.konversi(sudutindegree);
+       cld.konversi(sudutinrad);
+       
+       System.out.println("--------SIN--------");
+       System.out.println(cld.sin());
+       System.out.println(clr.sin());
+       
+       System.out.println("--------COS--------");
+       System.out.println(cld.cos());
+       System.out.println(clr.cos());
+       
+       System.out.println("--------TAN--------");
+       System.out.println(cld.tan());
+       System.out.println(clr.tan());
+       
+       CalculatorScientific cs = new CalculatorScientific();
+       System.out.println(cs.menghitungFaktorial(4));
+       */
+      
+      Kalkulator cl = new Kalkulator();
+      //SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryReverse();
+      SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryForward();
+      
+      cl.setSimpanOperasi(spr);
+      
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println("");
+      System.out.println("1 + 1 = "+ cl.jumlah());
+      //System.out.println("1 x 1 = "+ cl.kali());
+      //System.out.println("1 - 1 = "+ cl.kurang());
+      //System.out.println("1 / 1 = "+ cl.bagi());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println("");
+      System.out.println("2 + 2 = "+ cl.jumlah());
+      //System.out.println("2 x 2 = "+ cl.kali());
+      //System.out.println("2 - 2 = "+ cl.kurang());
+      //System.out.println("2 / 2 = "+ cl.bagi());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println("");
+      System.out.println("3 + 3 = "+ cl.jumlah());
+      //System.out.println("3 x 3 = "+ cl.kali());
+      //System.out.println("3 - 3 = "+ cl.kurang());
+      //System.out.println("3 / 3 = "+ cl.bagi());
+      
+      System.out.println("Data dari memori: ");
+      
+      System.out.println(cl.bacaOperasi());
+       
+       
+    
     }
 }

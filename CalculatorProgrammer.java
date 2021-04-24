@@ -119,6 +119,8 @@ public class CalculatorProgrammer extends Kalkulator
         String hasilKonversi = Integer.toBinaryString(op1) ;
         return hasilKonversi;
     }
+    
+
  
     
 }
